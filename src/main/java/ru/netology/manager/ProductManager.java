@@ -58,16 +58,4 @@ public class ProductManager {
         return false;
     }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        ProductManager that = (ProductManager) o;
-        return Objects.equals(repository, that.repository) && Objects.equals(book, that.book) && Objects.equals(smartPhone, that.smartPhone);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(repository, book, smartPhone);
-    }
 }
